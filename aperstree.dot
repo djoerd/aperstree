@@ -1,0 +1,456 @@
+strict digraph G {
+
+//    Academic Genealogy of Peter Apers
+//      a gift from the Database Group 
+//         of the University Twente 
+// on the occasion of Peter's farewel party
+//             16 February 2018
+
+
+// general settings
+graph [fontname = "helvetica"];
+node [shape = rect]
+rankdir=LR;
+
+// an invisible graph to shape the graph to our needs
+"0" [shape = none,label="",width=0, height=0];
+"1" [shape = none,label="",width=2, height=0]; // unused layer for extra width
+"2" [shape = none,label="",width=0, height=0];
+"3" [shape = none,label="",width=0, height=0];
+"4" [shape = none,label="",width=0, height=0];
+"5" [shape = none,label="",width=0, height=0];
+"6" [shape = none,label="",width=0, height=0];
+"7" [shape = none,label="",width=0, height=0];
+"8" [shape = none,label="",width=0, height=0];
+"0"->"1"->"2"->"3"->"4"->"5"->"6"->"7"->"8" [style=invis];
+
+// all edges:
+"Cornelis Biezeno\n1933" -> "Adriaan van Wijngaarden\n1945";
+"Adriaan van Wijngaarden\n1945" -> "Reind van de Riet\n1968";
+"Reind van de Riet\n1968" -> "Peter Apers";
+"Peter Apers" [ label = <<font point-size="24">Peter Apers<br/>1982</font>> ];
+"Peter Apers" -> {
+  "Annita Wilschut\n1993";
+  "Maurice Houtsma\n1989";
+
+  "Carel van den Berg\n1994";
+  "Arno Siebes\n1990";
+  "Rene Bal\n1994";
+  "David Spelt\n1999";
+  "Rolf de By\n1991";
+  "Rob van de Weg\n1995";
+  "Hennie Steenhagen\n1995";
+  "Hein Veenhof\n1997";
+  "Maurice van Keulen\n1997";
+  "Erik van Kuijk\n1991";
+  "Paul Grefen\n1992";
+  "Mark Vermeer\n1997";
+  "Lei Wang\n2015";
+  "Daan Velthausz\n1998";
+  "Gerrit Hiddink\n2001";
+
+  "Rick van Rein\n2002";
+  "Roelof van Zwol\n2002";
+  "Nirvana Meratnia\n2005";
+  "Jose Campos\n2003";
+
+  "Vojkan Mihajloviç\n2006";
+  "Henning Rode\n2008";
+  "Joeri van Ruth\n2008";
+  "Marli Vogels\n1997";
+  "Ander de Keijzer\n2008";
+  "Arthur van Bunningen\n2008";
+  "Sander Evers\n2009";
+  "Harold van Heerde\n2010";
+  "Riham Abdel Kader\n2010";
+
+  "Frans van Hoeve\n1989";
+  "Wouter Teeuw\n1993";
+  "Sunil Choenni\n1995";
+  "Henk Ernst Blok\n2002";
+  "Arjen de Vries\n1999";
+  "Jacek Skowronek\n1997";
+
+  "Pavel Serdyukov\n2009";
+  "Robin Aly\n2010";
+  "Kien Tjin-Kam-Jet\n2013";
+  "Rezwan Huq\n2013";
+  "Sergio Duarte\n2014";
+  "Mena Badieh Habib\n2014";
+  "Ghita Berrada\n2015";
+  "Victor de Graaff\n2015";
+  "Zhemin Zhu\n2015";
+  "Mohammad Khelghati\n2016";
+  "Brend Wanders\n2016";
+  "Masrour Zoghi\n2017";
+  "Almer Tigelaar\n2012";
+}
+
+"Maurice Houtsma\n1989" -> {
+  "Hein Veenhof\n1997";
+}
+
+"Arno Siebes\n1990" -> 
+{ 
+  "Robert Castelo\n2002";
+  "Arne Koopman\n2010";
+  "Rainer Malik\n2006";
+  "Carsten Riggelsen\n2006";
+  "Jeroen De Knijf\n2008";
+  "Jilles Vreeken\n2009";
+  "Roel Bertens\n2017";
+  "Ronnie Bathoorn\n2007";
+  "Matthijs van Leeuwen\n2010";
+  "Arno Knobbe\n2004";
+  "Diyah Puspitaningrum\n2012";
+  "Johan van den Akker\n1998";
+  "Nicola Barile\n2014";
+  "Johan van den Akker\n1998";
+  "Muhammad Subianto\n2009";
+  "Leonie van der Voort\n1994";
+  "Chris Thieme\n1995";
+}
+
+"Arno Knobbe\n2004" -> {
+  "Wouter Duivesteijn\n2013";
+  "Shengfa Miao\n2017";
+  "Ugo Vespier\n 2015";
+  "Claudio Sa\n 2016";
+  "Rob Konijn\n2017";
+  "Jan van Rijn\n2016";
+}
+
+"Carsten Riggelsen\n2006" -> {
+  "Nicolas Kühn\n2010";
+  "Lilian Blaser\n2009";
+  "Kristin Vogel\n2013";
+}
+
+"Robert Castelo\n2002" -> {
+  "Sonja Hänzelmann\n2012";
+  "Inma Tur\n2014";
+}
+
+"Jilles Vreeken\n2009" -> {
+  "Roel Bertens\n2017";
+}
+
+"Matthijs van Leeuwen\n2010" -> {
+  "Diyah Puspitaningrum\n2012";
+  "Vladimir Dzyuba\n2017";
+}
+
+"Rolf de By\n1991" -> 
+{ "Maurice van Keulen\n1997";
+  "Rob Lemmens\n2006";
+  "Ale Raza\n2001";
+  "Saadi Mesgari\n2001"; 
+  "Victor de Graaff\n2015"; 
+  "Gaurav Singh\n2014";
+  "Nirvana Meratnia\n2005";
+  "Arta Dilo\n2006";
+  "Jose Campos\n2003";
+}
+
+"Maurice van Keulen\n1997" -> {
+  "Marko Smiljaniç\n2006";
+  "Ander de Keijzer\n2008";
+  "Riham Abdel Kader\n2010";
+  "Mena Badieh Habib\n2014";
+  "Ghita Berrada\n2015";
+  "Victor de Graaff\n2015";
+  "Mohammad Khelghati\n2016";
+  "Brend Wanders\n2016";
+}
+
+"Arjen de Vries\n1999" -> {
+  "Thijs Westerveld\n2004";
+  "Georgina Ramirez\n2007";
+  "Jun Wang\n2008";
+  "Mark van Doorn\n2009";
+  "Alex van Ballegooij\n2009";
+  "Maarten Clements\n2010";
+  "Roberto Cornacchia\n2012";
+  "Samur Araujo\n2014";
+  "Carsten Eickhoff\n2014";
+  "Wen Li\n2016";
+  "Jeroen Vuurens\n2017";
+  "Thaer Samar\n2017";
+}  
+
+"Paul Grefen\n1992" -> {
+  "Samuil Angelov\n2006";
+  "Alex Norta\n2007";
+  "Ting Wang\n2011";
+  "Roberto Seguel\n2012";
+  "Zhiqiang Yan\n2012";
+  "Benedikt Kratz\n2012";
+  "Jana Samalikova\n2012";
+  "Daniel Kelemen\n2013";
+  "Joel Ribeiro\n2013";
+  "Heidi Romero\n2014";
+  "Egon Lüftenegger\n2014";
+  "Jan Claes\n2015";
+  "Rob Vanwersch\n2016";
+  "Mohammad Rasouli\n2016";
+  "Shaya Pourmirza\n2016";
+}
+
+"Nirvana Meratnia\n2005" -> 
+{
+  "Yang Zhang\n2010";
+  "Majid Bahrepour\n2013";
+  "Wouter van Kleunen\n2014";
+  "Zahra Taghikhaki\n2015";
+  "Mitra Baratchi\n2015";
+  "Kui Zhang\n2015";
+  "Fatjon Seraj\n2017";  
+}
+
+"Jun Wang\n2008" -> 
+{
+  "Tamas Jambor\n2013";
+  "Jagadeesh Gorla\n2013";
+  "Shuai Yuan\n2014";
+  "Bowei Chen\n2014";
+  "Xiaoxue Zhang\n2015";
+  "Marc Sloan\n2015";
+  "Weinan Zhang\n2016";
+}
+
+
+// From here, we put people on different ranks:
+// Rank 0: Peter
+// Rank 1: room for arrows
+// Ranks 2 to 5: Peter's children, where people with offspring have the highest ranks
+// Ranks 6 and 7: Peter's grand children
+// Rank 8: Peter's great-grand children
+
+{ rank=same; "0"; "Peter Apers"; }
+
+// Some of Peter's children
+{ rank=same; "2";
+  "Maurice Houtsma\n1989";
+  "Roelof van Zwol\n2002";
+  "Erik van Kuijk\n1991";
+  "Rob van de Weg\n1995";
+  "Annita Wilschut\n1993";
+  "Carel van den Berg\n1994";
+  "Mark Vermeer\n1997";
+  "Marli Vogels\n1997";
+  "Daan Velthausz\n1998";
+}
+
+// Some more of Peter's children
+{ rank=same; "3"; 
+  "Rene Bal\n1994";
+  "Sunil Choenni\n1995";
+  "Wouter Teeuw\n1993";
+  "Hennie Steenhagen\n1995";
+  "Hein Veenhof\n1997";
+  "Jacek Skowronek\n1997";
+  "David Spelt\n1999";
+  "Gerrit Hiddink\n2001";
+  "Henk Ernst Blok\n2002";
+  "Arthur van Bunningen\n2008";
+  "Sander Evers\n2009";
+  "Rick van Rein\n2002";
+  "Joeri van Ruth\n2008";
+  "Harold van Heerde\n2010";
+  "Rezwan Huq\n2013";
+  "Lei Wang\n2015";
+}
+
+// Peter's children, even more (with lots of offspring)
+{ rank=same; "4"; 
+  "Arno Siebes\n1990";
+  "Rolf de By\n1991";
+  "Maurice van Keulen\n1997";
+  "Arjen de Vries\n1999";
+}
+
+// Peter's children, even some more
+{ rank=same; "5";
+  "Paul Grefen\n1992"
+  "Nirvana Meratnia\n2005";
+  "Jose Campos\n2003";
+  "Henning Rode\n2008";
+  "Ander de Keijzer\n2008";
+  "Riham Abdel Kader\n2010";
+  "Pavel Serdyukov\n2009";
+  "Robin Aly\n2010";
+  "Almer Tigelaar\n2012";
+  "Sergio Duarte\n2014";
+  "Mena Badieh Habib\n2014";
+  "Ghita Berrada\n2015";
+  "Victor de Graaff\n2015";
+  "Mohammad Khelghati\n2016";
+  "Brend Wanders\n2016";
+  "Kien Tjin-Kam-Jet\n2013";
+  "Zhemin Zhu\n2015";
+  "Vojkan Mihajloviç\n2006";
+  "Masrour Zoghi\n2017";
+}
+
+
+// Half of Peter's grand-children
+{ rank=same; "6";
+  // Maurice:
+  "Marko Smiljaniç\n2006";
+  // Rolf:
+  "Gaurav Singh\n2014";
+  "Ale Raza\n2001";
+  "Rob Lemmens\n2006";
+  // Arjen:
+  "Wen Li\n2016";
+  "Georgina Ramirez\n2007";
+  "Mark van Doorn\n2009";
+  "Thijs Westerveld\n2004";
+  "Alex van Ballegooij\n2009";
+  "Carsten Eickhoff\n2014";
+  // Arno:
+  "Rainer Malik\n2006";
+  "Jeroen De Knijf\n2008";
+  "Nicola Barile\n2014";
+  "Johan van den Akker\n1998";
+  "Muhammad Subianto\n2009";
+  "Leonie van der Voort\n1994";
+  "Chris Thieme\n1995";
+  "Jilles Vreeken\n2009";
+  "Matthijs van Leeuwen\n2010";
+  "Roberto Cornacchia\n2012";
+  "Jeroen Vuurens\n2017";
+  "Ronnie Bathoorn\n2007";
+  // Paul:
+  "Samuil Angelov\n2006";
+  "Ting Wang\n2011";
+  "Zhiqiang Yan\n2012";
+  "Jana Samalikova\n2012";
+  "Joel Ribeiro\n2013";
+  "Egon Lüftenegger\n2014";
+  "Mohammad Rasouli\n2016";
+  // Nirvana:
+  "Fatjon Seraj\n2017";
+  "Majid Bahrepour\n2013";
+  "Zahra Taghikhaki\n2015";
+}
+
+// Other half of Peter's grand-children
+{ rank=same; "7";
+  // Maurice:
+  // Rolf:
+  "Arta Dilo\n2006";
+  "Saadi Mesgari\n2001";
+  // Arjen:
+  "Jun Wang\n2008";
+  "Maarten Clements\n2010";
+  "Thaer Samar\n2017";
+  "Samur Araujo\n2014";
+  // Arno:
+  "Arne Koopman\n2010";
+  "Arno Knobbe\n2004";
+  "Carsten Riggelsen\n2006";
+  "Robert Castelo\n2002";
+  "Diyah Puspitaningrum\n2012";
+  "Roel Bertens\n2017";
+  // Paul:
+  "Alex Norta\n2007";
+  "Roberto Seguel\n2012";
+  "Benedikt Kratz\n2012";
+  "Daniel Kelemen\n2013";
+  "Heidi Romero\n2014";
+  "Jan Claes\n2015";
+  "Shaya Pourmirza\n2016";
+  "Rob Vanwersch\n2016";
+  // Nirvana:
+  "Yang Zhang\n2010";
+  "Wouter van Kleunen\n2014";
+  "Mitra Baratchi\n2015";
+  "Kui Zhang\n2015";
+}
+
+// Peter's great-grand-children
+{
+  rank=same; "8";
+  // via Arno -> Robert Castelo
+  "Sonja Hänzelmann\n2012";
+  "Inma Tur\n2014";
+  // via Arno -> Matthijs van Leeuwen
+  "Vladimir Dzyuba\n2017";
+  // Arno -> Knobbe
+  "Wouter Duivesteijn\n2013";
+  "Shengfa Miao\n2017";
+  "Ugo Vespier\n 2015";
+  "Claudio Sa\n 2016";
+  "Rob Konijn\n2017";
+  "Jan van Rijn\n2016";
+  // Arno -> Carsten Riggelsen
+  "Nicolas Kühn\n2010";
+  "Lilian Blaser\n2009";
+  "Kristin Vogel\n2013";
+  // via Arjen -> Jun Wang
+  "Tamas Jambor\n2013";
+  "Jagadeesh Gorla\n2013";
+  "Shuai Yuan\n2014";
+  "Bowei Chen\n2014";
+  "Xiaoxue Zhang\n2015";
+  "Marc Sloan\n2015";
+  "Weinan Zhang\n2016";
+}
+
+// Co-promotors and group members that are not descendants of Peter: 
+
+edge [style=dashed]
+node [style=dashed]
+
+"Djoerd Hiemstra\n2001" -> 
+{
+  "Vojkan Mihajloviç\n2006";
+  "Henning Rode\n2008";
+  "Pavel Serdyukov\n2009";
+  "Robin Aly\n2010";
+  "Almer Tigelaar\n2012";
+  "Kien Tjin-Kam-Jet\n2013";
+  "Sergio Duarte\n2014";
+  "Zhemin Zhu\n2015";
+  "Mohammad Khelghati\n2016";
+  "Masrour Zoghi\n2017";
+}
+
+"Ling Feng\n2000" ->
+{
+  "Arthur van Bunningen\n2008";
+  "Sander Evers\n2009";
+  "Harold van Heerde\n2010";
+}
+
+"Maarten Fokkinga\n1992" -> 
+{
+  "Rick van Rein\n2002";
+  "Joeri van Ruth\n2008";
+  "Sander Evers\n2009";
+}
+
+"Andreas Wombacher\n2004" -> 
+{
+  "Rezwan Huq\n2013";
+}
+
+"Herman Balsters\n1986" ->
+{
+  "Rolf de By\n1991"
+  "Rene Bal\n1994";
+  "David Spelt\n1999";
+}
+
+"Henk Blanken\n1985" ->
+{
+  "Frans van Hoeve\n1989";
+  "Wouter Teeuw\n1993";
+  "Jacek Skowronek\n1997";
+  "Sunil Choenni\n1995";
+  "Arjen de Vries\n1999";
+  "Henk Ernst Blok\n2002";
+}
+
+}
