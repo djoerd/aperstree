@@ -32,25 +32,26 @@ rankdir=LR;
 "Peter Apers" -> {
   "Annita Wilschut\n1993";
   "Maurice Houtsma\n1989";
+  "Erik van Kuijk\n1991";
+  "Rob van de Weg\n1995";
+  "Hennie Steenhagen\n1995";
 
   "Carel van den Berg\n1994";
   "Arno Siebes\n1990";
   "Rene Bal\n1994";
   "David Spelt\n1999";
   "Rolf de By\n1991";
-  "Rob van de Weg\n1995";
-  "Hennie Steenhagen\n1995";
+
   "Hein Veenhof\n1997";
   "Maurice van Keulen\n1997";
-  "Erik van Kuijk\n1991";
   "Paul Grefen\n1992";
   "Mark Vermeer\n1997";
   "Lei Wang\n2015";
   "Daan Velthausz\n1998";
-  "Gerrit Hiddink\n2001";
 
   "Rick van Rein\n2002";
   "Roelof van Zwol\n2002";
+  "Gerrit Hiddink\n2001";
   "Nirvana Meratnia\n2005";
   "Jose Campos\n2003";
 
@@ -59,9 +60,9 @@ rankdir=LR;
   "Joeri van Ruth\n2008";
   "Marli Vogels\n1997";
   "Ander de Keijzer\n2008";
+  "Harold van Heerde\n2010";
   "Arthur van Bunningen\n2008";
   "Sander Evers\n2009";
-  "Harold van Heerde\n2010";
   "Riham Abdel Kader\n2010";
 
   "Frans van Hoeve\n1989";
@@ -232,7 +233,6 @@ rankdir=LR;
 { rank=same; "2";
   "Maurice Houtsma\n1989";
   "Roelof van Zwol\n2002";
-  "Erik van Kuijk\n1991";
   "Rob van de Weg\n1995";
   "Annita Wilschut\n1993";
   "Carel van den Berg\n1994";
@@ -243,6 +243,7 @@ rankdir=LR;
 
 // Some more of Peter's children
 { rank=same; "3"; 
+  "Erik van Kuijk\n1991";
   "Rene Bal\n1994";
   "Sunil Choenni\n1995";
   "Wouter Teeuw\n1993";
@@ -421,14 +422,15 @@ node [style=dashed]
 {
   "Arthur van Bunningen\n2008";
   "Sander Evers\n2009";
-  "Harold van Heerde\n2010";
 }
 
 "Maarten Fokkinga\n1992" -> 
 {
   "Rick van Rein\n2002";
   "Joeri van Ruth\n2008";
+  "Arthur van Bunningen\n2008";
   "Sander Evers\n2009";
+  "Harold van Heerde\n2010";
 }
 
 "Andreas Wombacher\n2004" -> 
